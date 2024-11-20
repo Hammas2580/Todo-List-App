@@ -14,11 +14,6 @@ A simple and responsive **To-Do List Application** built with HTML, CSS, JavaScr
 
 ---
 
-## 📸 Preview
-
-![To-Do List App Screenshot](https://todo-list-app-milestone3.netlify.app/)  
-
----
 
 ## 🛠️ Technologies Used
 
@@ -27,7 +22,4 @@ A simple and responsive **To-Do List Application** built with HTML, CSS, JavaScr
 - **Bootstrap**: For responsive design and prebuilt components.
 - **JavaScript**: For dynamic functionality (adding, editing, deleting tasks).
 
----
-
-## 📂 Project Structure
 
