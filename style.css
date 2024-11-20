@@ -1,0 +1,138 @@
+/* .todo_heading {
+    text-align: center;
+}
+.todo_list {
+    text-align: center !important;
+}
+.inner_html_div {
+    align-items: center !important;
+
+} */
+ /* body{
+    align-items: center;
+ } */
+
+
+ /* General Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6; /* Light gray background */
+    color: #333;
+  }
+  
+  /* Heading Styling */
+  .todo_heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #4caf50; /* Green color */
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  /* To-Do List Container */
+  .todo_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #input {
+    padding: 10px;
+    width: 40%;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  #input:focus {
+    border-color: #ff9800; /* Orange focus */
+    box-shadow: 0 0 8px #ff9800;
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-success {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .btn-success:hover {
+    background-color: #45a049;
+  }
+  
+  .btn-danger {
+    background-color: #ff5722;
+    color: #fff;
+  }
+  
+  .btn-danger:hover {
+    background-color: #e64a19;
+  }
+  
+  /* To-Do Items Styling */
+  .inner_html_div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #ul {
+    width: 60%;
+    list-style: none;
+    padding: 0;
+  }
+  
+  #ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #ul li button {
+    margin-left: 5px;
+  }
+  
+  #ul li .btn-success {
+    background-color: #ff9800 !important;
+  }
+  
+  #ul li .btn-success:hover {
+    background-color: #fb8c00 !important;
+  }
+  
+  /* Delete All Button */
+  .btn-danger {
+    margin-left: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #input {
+      width: 60%;
+    }
+  
+    button {
+      font-size: 0.9rem;
+    }
+  
+    #ul {
+      width: 80%;
+    }
+  }
+  
