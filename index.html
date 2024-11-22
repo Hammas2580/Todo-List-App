@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Todo App</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -12,13 +12,21 @@
   </head>
   <body class="container">
     <h1 class="todo_heading">TO-DO LIST APP</h1>
-    <div class="todo_list">
-      <input name="abc" id="input" type="text" placeholder="Enter Your Tasks" />
-      <button class="btn btn-success" onclick="foo()">Add Item</button>
-      <button class="btn  btn-danger" onclick="deleteall()">Delete All</button>
-    </div>
-    <div class="inner_html_div">
-      <ul id="ul"></ul>
+    <div class="main_todo">
+      <div class="todo_list">
+        <input
+          name="abc"
+          id="input"
+          type="text"
+          placeholder="Enter Your Todos"
+        />
+        <button class="btn btn-success" onclick="foo()">Add Todo</button>
+        <button class="btn btn-danger" onclick="deleteall()">Delete All</button>
+      </div>
+
+      <div class="inner_html_div">
+        <ul id="ul"></ul>
+      </div>
     </div>
 
     <script src="./app.js"></script>

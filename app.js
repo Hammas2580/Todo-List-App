@@ -1,39 +1,42 @@
-
-var getUl = document.getElementById("ul");
+var getUi = document.getElementById("ul");
+var todo = document.getElementById("input");
 
 function foo() {
-    
-  var value1 = document.getElementById("input");
-  var li = document.createElement("li");
-  var liText = document.createTextNode(value1.value);
-  li.appendChild(liText);
-  getUl.appendChild(li);
-  //   Create delete button in html
-  value1.value = "";
-  var deleteBtn = document.createElement("Button");
-  var deleteValue = document.createTextNode("Delete");
-  deleteBtn.appendChild(deleteValue);
-  li.appendChild(deleteBtn);
-  deleteBtn.setAttribute("onclick", "del(this)");
-  //    crate edit button in html
-  var editBtn = document.createElement("Button");
-  var editValue = document.createTextNode("Edit");
-  editBtn.appendChild(editValue);
-  li.appendChild(editBtn);
-  editBtn.setAttribute("onclick", "editfunc(this)");
+  if (!todo.value.trim()) {
+    alert("Please enter a valid value!");
+    return;
+  }
+  var text = document.createElement("li");
+  var li = document.createTextNode(todo.value);
+  text.appendChild(li);
+  getUi.appendChild(text);
+  todo.value = "";
+  //   delte btn
+  var delteBtn = document.createElement("button");
+  var delteValue = document.createTextNode("Remove");
+  delteBtn.appendChild(delteValue);
+  text.appendChild(delteBtn);
+  delteBtn.setAttribute("onclick", "delte(this)");
+  delteBtn.setAttribute("class", "del");
+  //  edit btn
+  var editBtnBtn = document.createElement("button");
+  var editValue = document.createTextNode("Update");
+  editBtnBtn.appendChild(editValue);
+  text.appendChild(editBtnBtn);
+  editBtnBtn.setAttribute("onclick", "edit(this)");
+  editBtnBtn.setAttribute("class", "add");
 }
-// edit button
-function editfunc(e) {
-  var a = prompt("Enter Edit Value", e.parentNode.firstChild.nodeValue);
-  e.parentNode.firstChild.nodeValue = a;
-}
-//  delte button
 
-function del(e) {
-  e.parentNode.remove();
+function edit(e) {
+  var edit = prompt("Updte your Todo", e.parentNode.firstChild.nodeValue);
+  e.parentNode.firstChild.nodeValue = edit;
+  todo.value = "";
 }
-// all  delete button
+//  delete btn
+function delte(remove) {
+  remove.parentNode.remove();
+}
 
 function deleteall() {
-  getUl.innerHTML = "";
+  getUi.innerHTML = "";
 }
